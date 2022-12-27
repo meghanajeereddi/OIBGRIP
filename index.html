@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .main {
+            background: url(https://www.skillsuccess.com/wp-content/uploads/2020/12/learn-web-development-2-720x480.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .main::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background: black;
+            opacity: .5;
+        }
+
+        .icon {
+            height: 75px;
+            width: 200px;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .logo {
+            font-size: 80px;
+            color: whitesmoke;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .menu {
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+
+        ul {
+            display: inline-flex;
+        }
+
+        ul li {
+            font-size: 35px;
+            list-style: none;
+            margin-left: 35px;
+            font-family: cursive;
+        }
+
+        .navbar {
+            display: inline-flex;
+        }
+
+        a {
+            text-decoration: none;
+            color: darkgray;
+        }
+
+        ul li a:hover {
+            color: darkmagenta;
+        }
+
+        .search {
+            margin-top: 40px;
+            margin-left: 80px;
+        }
+
+        .srch {
+            width: 100px;
+            height: 40px;
+            font-family: 'Times New Roman';
+            background: transparent;
+            border: 2px solid white;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-right: none;
+        }
+
+        .btn {
+            width: 80px;
+            height: 40px;
+            border: 2px solid whitesmoke;
+
+            color: black;
+            font-size: 15px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .btn:focus {
+            background-color: black;
+        }
+
+        .srch:focus {
+            background-color: silver;
+        }
+
+        .content {
+            color: white;
+            width: 1700px;
+        }
+
+        .content h1 {
+            padding-left: 50px;
+            padding-top: 125px;
+            font-size: 50px;
+        }
+
+        .content .para {
+            padding-left: 50px;
+            padding-bottom: 25px;
+            font-size: 25px;
+            font-family: Georgia, Times, 'Times New Roman';
+            letter-spacing: 2px;
+        }
+
+        .content .para span {
+            font-family: cursive;
+            font-size: 40px;
+        }
+
+        .content .js {
+            width: 80px;
+            height: 40px;
+            border: 2px solid whitesmoke;
+            background-color: blanchedalmond;
+            color: black;
+            font-size: 15px;
+            border-radius: 5px;
+            margin-left: 700px;
+            cursor: pointer;
+        }
+
+        .js:hover {
+            background-color: black;
+        }
+
+        .form {
+            height: 210px;
+            width: 300px;
+            background-color: rgb(201, 226, 226);
+            position: absolute;
+            top: 200px;
+            right: 80px;
+        }
+
+        h2 {
+            font-size: 50px;
+            color: black;
+        }
+
+        .inp {
+            margin-left: 10px;
+            width: 150px;
+            height: 30px;
+            font-family: 'Times New Roman';
+            background: transparent;
+            border: 2px solid #211d1d;
+            border-radius: 5px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        .btnn {
+            width: 60px;
+            height: 30px;
+            border: 2px solid cadetblue;
+            background-color: rgb(6, 71, 74);
+            color: black;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+
+        .btnn:focus {
+            background-color: black;
+        }
+
+        .lp {
+            margin-left: 70px;
+            color: black;
+        }
+
+        .atag {
+            margin-left: 70px;
+            color: darkblue;
+            font-weight: bolder;
+        }
+
+        ::placeholder {
+            color: black;
+        }
+
+        button:hover {
+            background-color: rgb(105, 59, 68);
+        }
+    </style>
+</head>
+
+<body class="main">
+    <div class="navbar">
+        <div class="icon">
+            <h1 class="logo">LEARN</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" placeholder="type to text">
+            <a href=""><button class="btn">SEARCH</button></a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>WEB DESIGN & <br><span>DEVELOPMENT</span></h1> <br><br>
+        <P class="para">What is web design and development?<br> Web design and development is an umbrella term that
+            describes the process
+            <br> of creating a website. <br> Like the name suggests, it involves two major skill sets: <br><span>
+                web design and web
+                development. <br> Web design determines the look and feel of a website, <br> while web development
+                determines how it
+                functions.
+            </span>
+        </P>
+        <a href=""><button class="js">JOIN US</button></a>
+    </div>
+    <div class="form">
+        <h2>Login Form</h2>
+        <input class="inp" type="email" placeholder="enter mail here"> <br>
+        <input class="inp" type="password" placeholder="enter your password"> <br>
+        <a href="#"><button class="btnn">SUBMIT</button></a>
+        <p class="lp">Don't have an account?</p>
+        <a class="atag" href="#">SIGN-UP here</a>
+    </div>
